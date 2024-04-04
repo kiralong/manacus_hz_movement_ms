@@ -6,11 +6,19 @@ Repository describing the bioinformatic code used for the analysis of population
 
 ## Stacks pipeline
 
-Analysis of RADseq data using the [*Stacks*](https://catchenlab.life.illinois.edu/stacks/) software.
+Analysis of RADseq data using the *Stacks* [(Rochette et al. 2019)](https://catchenlab.life.illinois.edu/stacks/) software.
+
+1. `process_radtags.sh`: Process the raw RADseq reads to clean data, demultiplex, and remove adapters.
+2. alignment with `bwa` and `samtools`
+3. gstacks
+4. populations
+
+Other:
+* `sumstats_to_whitelist.py`: Filter a SUMSTATS file from *Stacks* `populations` to generate a whitelist containing the catalog ID of a target set of SNPs.
 
 ## Population structure analysis
 
-PCA, admixture, intersp het, etc.
+PCA, admixture, etc.
 
 ## Hybrid simulations
 
