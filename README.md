@@ -1,6 +1,6 @@
 # _Manacus_ hybrid zone movement manuscript
 
-> Long _et al._ (2022) **Ongoing introgression of a secondary sexual plumage trait in a stable avian hybrid zone**. _bioRxiv_ <https://doi.org/10.1101/2023.03.30.535000>
+> Long _et al._ (2023) **Ongoing introgression of a secondary sexual plumage trait in a stable avian hybrid zone**. _bioRxiv_ <https://doi.org/10.1101/2023.03.30.535000>
 
 Repository describing the bioinformatic code used for the analysis of population structure and movement of the _Manacus_ hybrid zone in western Panama.
 
