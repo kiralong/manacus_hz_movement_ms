@@ -8,13 +8,16 @@ Repository describing the bioinformatic code used for the analysis of population
 
 Analysis of RADseq data using the *Stacks* [(Rochette et al. 2019)](https://catchenlab.life.illinois.edu/stacks/) software.
 
+Main Pipeline Steps:
 1. `process_radtags.sh`: Process the raw RADseq reads to clean data, demultiplex, and remove adapters.
-2. alignment with `bwa` and `samtools`
-3. gstacks
-4. populations
+2. `bwa_alignment.sh`: Aligns reads to a reference genome with `bwa` and indexes with `samtools`.
+3. `run_gstacks.sh`: Assemble and genotype aligned reads and remove pcr duplicates with *Stacks* `gstacks`.
+4. `run_populations.sh`: Filter genotypes, calculate genome-wide statistics, export various file formats with *Stacks* `populations`
 
 Other:
 * `sumstats_to_whitelist.py`: Filter a SUMSTATS file from *Stacks* `populations` to generate a whitelist containing the catalog ID of a target set of SNPs.
+
+For a more tutorialized version of this RADseq pipeline see the following repository: <https://github.com/kiralong/RADseq_pipeline>
 
 ## Population structure analysis
 
