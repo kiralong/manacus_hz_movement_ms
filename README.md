@@ -23,10 +23,13 @@ For a more tutorialized version of this RADseq pipeline see the following reposi
 
 Population structure analysis using PCA and Admixture
 
+PCA:
 1. `adegenet_PCA.R`: Run a principal component analysis (PCA) with the R package `adegenet` and graph the output and correlation with genomic hbyrid index with `ggplot2`.
-2. `format_plink.sh`: After exporting PLINK files with *Stacks* `populaions --plink`, this script converts the `.ped` and `.map` files to `.bed` format.
-3. `run_admixture.sh`: Submits a cluster job to run an admixture analysis with the specificed number of k populations desired.
-4. `admixture_plot.R`: Plot Admixture results with stacked bar plots
+
+Admixture:
+1. `format_plink.sh`: After exporting PLINK files with *Stacks* `populaions --plink`, this script converts the `.ped` and `.map` files to `.bed` format.
+2. `run_admixture.sh`: Submits a cluster job to run an admixture analysis with the specificed number of k populations desired.
+3. `admixture_plot.R`: Plot Admixture results with stacked bar plots
 
 For a more tutorialized version of the Admixture analysis, see the following repository: <https://github.com/kiralong/Admixture_pipeline>
 
