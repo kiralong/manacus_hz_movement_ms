@@ -42,7 +42,12 @@ The original source for these RADseq-based hybrid simulations can be found in th
 
 ## GGhybrid analysis
 
-Stacks -> gghybrid format, hybrid index, etc.
+*Stacks* `populations --structure` -> format structure file -> calculate hybrid index with `gghybrid`
+
+1. `format_structurefile_for_gghybrid.sh`: Takes the structure file output from *Stacks* `populations --structure` and formats it for `gghybrid`
+2. `gghybrid_HI.R`: Runs the `gghybrid` genomic hybrid index analysis and exports a hybrid index table and table of loci used in the calculation.
+
+For a more tutorialized version of a `gghybrid` analysis, see the following repository: <https://github.com/kiralong/gghybrid_pipeline>
 
 ## Hybrid classification
 
