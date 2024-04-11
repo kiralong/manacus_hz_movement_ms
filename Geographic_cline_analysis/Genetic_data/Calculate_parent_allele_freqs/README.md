@@ -43,3 +43,7 @@ Calculate the allele frequency difference between the parental pops cg_100 and s
 Make the unique snp ID in the sumstats file
 Match the snp ID in both files
 Add a column to cline parameters file with the allele frequency absolute value difference
+
+## Authors
+Kira M. Long
+George W. Pantazes
