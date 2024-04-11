@@ -45,5 +45,7 @@ Match the snp ID in both files
 Add a column to cline parameters file with the allele frequency absolute value difference
 
 ## Authors
-Kira M. Long
+
+Kira M. Long  
 George W. Pantazes
+
