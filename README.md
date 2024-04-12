@@ -65,6 +65,8 @@ For a more tutorialized version of a `gghybrid` analysis, see the following repo
 5. `parental_allele_frequency_diff.py`: Python script to calculate allele frequency differences between parental species in two populations and add to `HZAR` output file.
 6. `stats_cline_centers.R`: R script to filter `HZAR` output by parental allele frequency differences and/or credibility interval and calculate summary stats of the data.
 
+For a more tutorialized version of a `HZAR` analysis, see the following repository: <https://github.com/kiralong/HZAR_pipeline>
+
 ## Geographic cline analysis (phenotype data)
 
 1. `hzar_morphological.R`: R script to run a geographic cline analysis with `HZAR` on morphological data inputs. Runs 1 traits at a time.
@@ -79,7 +81,7 @@ Raw RAD-seq reads can be found on NCBI under BioProject [PRJNA893627](https://ww
 
 ### 2024-04-11
 
-KML finsihed moving all scripts from their various repositories to this manuscript-specific repo.
+KML finished moving all scripts from their various repositories to this manuscript-specific repo.
 
 ### 2024-04-04
 
