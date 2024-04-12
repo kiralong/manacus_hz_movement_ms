@@ -56,17 +56,30 @@ For a more tutorialized version of a `gghybrid` analysis, see the following repo
 
 ## Geographic cline analysis (genetic data)
 
-Stacks -> hzar format, hzar parallel script, hzar formatting and filtering
+*Stacks* `populations --hzar` -> hzar formatted file -> hzar parallelized script for SNP data -> hzar formatting/merging output -> stats and filtering
+
+1. `hzar_parallelized.R`: R script to run a geographic cline analysis with `HZAR` on genetic (SNP) data.
+2. `run_hzar.sh`: Bash script to run an array job of `hzar_parallelized.R` on a computing cluster.
+3. `snp_ids_from_sumstats.sh`: Bash script to get auxillary input files for `HZAR` including a list of SNP IDs from the *Stacks* sumstats file and a lits of scaffolds/chromosome IDs. Can set how many SNPs per chromosome you want to include in list.
+4. `merge_hzar_outputs.py`: Python script to merge the separated outputs from running `HZAR` as an array job into a single file. Also matches SNP IDs to make sure SNP/cline is present in both temporal datasets.
+5. `parental_allele_frequency_diff.py`: Python script to calculate allele frequency differences between parental species in two populations and add to `HZAR` output file.
+6. `stats_cline_centers.R`: R script to filter `HZAR` output by parental allele frequency differences and/or credibility interval and calculate summary stats of the data.
 
 ## Geographic cline analysis (phenotype data)
 
-hzar phenotype scripts
+1. `hzar_morphological.R`: R script to run a geographic cline analysis with `HZAR` on morphological data inputs. Runs 1 traits at a time.
+2. `hzar_loop_hybrid_index.R`: R script to run a geographic cline with `HZAR` on the genomic hybrid index values generated from `gghybrid`.
+3. `convert_HI_table_to_hzar_format.R`: R script that converts the HI_table.txt from `gghybrid` and converts it to a `HZAR` input file.
 
 ## Data availability
 
 Raw RAD-seq reads can be found on NCBI under BioProject [PRJNA893627](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA893627).
 
 ## Notes
+
+### 2024-04-11
+
+KML finsihed moving all scripts from their various repositories to this manuscript-specific repo.
 
 ### 2024-04-04
 
