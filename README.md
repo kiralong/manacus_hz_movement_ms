@@ -1,6 +1,6 @@
 # _Manacus_ hybrid zone movement manuscript
 
-> Long _et al._ (2024) **Ongoing introgression of a secondary sexual plumage trait in a stable avian hybrid zone**. _bioRxiv_ <https://www.biorxiv.org/content/10.1101/2023.03.30.535000v2>
+> Long _et al._ (2024) **Ongoing introgression of a secondary sexual plumage trait in a stable avian hybrid zone**. _Evolution_ <https://doi.org/10.1093/evolut/qpae076>
 
 Repository describing the bioinformatic code used for the analysis of population structure and movement of the _Manacus_ hybrid zone in western Panama.
 
@@ -78,6 +78,10 @@ For a more tutorialized version of a `HZAR` analysis, see the following reposito
 Raw RAD-seq reads can be found on NCBI under BioProject [PRJNA893627](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA893627).
 
 ## Notes
+
+### 2024-05-22
+
+Updated with the official DOI from _Evolution_.
 
 ### 2024-04-11
 
